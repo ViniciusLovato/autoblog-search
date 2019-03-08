@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const CrawlerAggregator = require('../service/CrawlerAggregator')
+const CrawlerAggregator = require('../aggregators/CrawlerAggregator')
 
 const crawlerAggregator = new CrawlerAggregator();
 

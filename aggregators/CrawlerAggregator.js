@@ -5,7 +5,7 @@ const kabumExtractor = require('../extractors/kabumExtractor').extractor;
 const terabyteExtractor = require('../extractors/terabyteExtractor').extractor;
 
 
-const { PICHAU_URL, KABUM_URL, TERABYTE_URL} = require('./constants');
+const { PICHAU_URL, KABUM_URL, TERABYTE_URL} = require('../service/constants');
 
 class CrawlerAgreggator {
 
