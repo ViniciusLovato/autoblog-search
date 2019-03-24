@@ -6,8 +6,9 @@ const crawlerAggregator = new CrawlerAggregator();
 
 router.get('/:term', async (req, res) => {
   const term = req.params.term;
+  const order = req.query.order;
 
-  const result = await crawlerAggregator.search(term);
+  const result = await crawlerAggregator.search(term, order);
 
   res.send(result);
 });
