@@ -1,3 +1,5 @@
+const { TERABYTE_BASE_URL } = require('../service/constants');
+
 extractor = ($) => {
     let results = [];
     $('.pbox').each((i, elem) => {
@@ -17,7 +19,7 @@ extractor = ($) => {
           .find('.commerce_columns_item_image img')
           .attr('src')
 
-        results.push({ name: name.trim(), link: link.trim(), price: { promotional_price, regular_price }, photo});
+        results.push({ name: name.trim(), link: TERABYTE_BASE_URL+link.trim(), price: { promotional_price, regular_price }, photo});
         console.log(name, link, photo);
 
     });
